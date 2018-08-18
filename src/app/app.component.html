@@ -1,14 +1,41 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <app-login></app-login>
+  <!-- <app-login></app-login> -->
+  <sign-in></sign-in>
+  <br/>
+  <app-branding></app-branding>
   <br/>
   <h1>
     Welcome to {{ title }}!
+  </h1>
+  <div *ngIf="status">
     <p>First Name: {{firstName | uppercase}}</p>
     <p>Last Name: {{lastName}}</p>
     <p>Likes: {{likes | currency}}</p>
-    <p>Description: {{description}}</p>
-  </h1>  
+    <p>Description: {{description}}</p>>    
+  </div>
+  <br/>
+  <app-conditional></app-conditional>
+  <br/>
+  <!-- <app-product-detail
+    name="Rose"
+    price=100
+    quantity=1000
+    likes=10000
+    imageUrl="/assets/images/transflower.jpeg">
+  </app-product-detail>
+  <app-product-detail
+    name="Jasmine"
+    price=200
+    quantity=2000
+    likes=20000
+    imageUrl="/assets/images/jasmine.jpg">
+  </app-product-detail> -->
+  <br/>
+  
+<app-productlist>
+</app-productlist>
+<selling-products></selling-products>  
 </div>
 
 

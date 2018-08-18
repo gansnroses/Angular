@@ -1,0 +1,6 @@
+
+.success { color: green; 
+           border: 2px dashed #214AED; }
+
+.error { color: red; 
+         border: 2px dashed #214AED; }

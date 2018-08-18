@@ -1,0 +1,15 @@
+.bordered {
+  border: 2px dashed #214AED;
+  background-color: #E1AE7E; 
+}
+
+.bold-text { font-weight:bold; }
+.green { color: green;  }
+.blue { color:blue; font-size:25px ;
+        font-style: italic;}
+
+.red { color: red;  }
+.show-class {visibility: visible;}
+.hide-class {visibility: hidden;}
+.italic-text {font-style: italic;}
+.small-text {font-size: 5px;}

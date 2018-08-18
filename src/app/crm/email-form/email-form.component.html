@@ -1,0 +1,29 @@
+<!--<form>
+  <h2>Email Form</h2>
+  <label for="email">Email:</label>
+  <input id="email" type="text">
+
+  <button type="submit">Submit</button>
+
+</form>-->
+
+<form [formGroup]="emailForm">
+  <h2>Email Form</h2>
+  <label for="email">Email:</label>
+  <input id="email" type="text" formControlName="email">
+
+  <button type="submit">Submit</button>
+</form>
+
+<pre> {{ emailForm.value | json }} </pre>
+<pre> {{ emailForm.controls['email'].valid }} </pre>
+<pre> {{ email.valid }} </pre>
+
+<div *ngIf="!email.valid && email.dirty">Email is invalid
+        <p *ngIf="email.hasError('required')">Email is required</p>
+        <p *ngIf="email.hasError('notA')">First letter of the email needs to be an a</p>
+</div>
+
+<div *ngIf="email.errors?.pattern">
+  Email is not valid.
+</div> 

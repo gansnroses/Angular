@@ -1,0 +1,21 @@
+<h1>
+  Product Detail Component
+</h1>
+
+<img src="{{imageUrl}}" width="100" height="100">
+<p>Flower: {{name}}</p>
+<p>Unitprice: {{price | currency:'INR'}}</p>
+<p>Quantity: {{quantity}}</p>
+<p>likes: {{likes}}</p>
+<br/>
+<app-counter [count]=likes
+              (update)="counterUpdate($event)">
+
+</app-counter>
+<p><a href="javascript:void(0)" (click)="order()">Order</a></p>
+
+
+
+
+
+

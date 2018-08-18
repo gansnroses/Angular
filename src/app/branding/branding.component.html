@@ -1,0 +1,10 @@
+<h1>
+  Style Branding
+</h1>
+<div [ngClass]="['bold-text', 'green']">Array fo classes</div>
+<div [ngClass]="'blue'">Strings of classes</div>
+<div [className]="'blue'">CSS class using property styntax</div>
+<div [ngClass]="{'small-text': true, 'red':true}">Object/map of classes</div>
+<br/>
+<div [ngClass]="{bordered:false}">This is never bordererd</div>
+<div [ngClass]="{bordered:true}">This is always bordererd</div>

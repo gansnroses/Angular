@@ -1,0 +1,29 @@
+<p>
+  Product List
+</p>
+
+<!-- <div *ngIf="flowersArray">  
+    <ul *ngFor="let data of flowersArray">
+      <li>{{data}}</li>
+  </ul>
+
+</div> -->
+
+<div>
+  <ul *ngFor="let data of flowersArray">
+    <li>
+      <div>
+          <app-product-detail 
+            name="{{data.name}}"
+            price="{{data.price}}"
+            likes="{{data.likes}}"
+            quantity="{{data.quantity}}"
+            imageUrl="{{data.imageUrl}}">
+
+          </app-product-detail>
+      </div>
+    </li>
+  </ul>
+  
+</div>
+

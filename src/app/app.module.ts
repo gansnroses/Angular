@@ -1,19 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
-import {FormsModule} from '@angular/forms'
+import {FormsModule} from '@angular/forms';
+import { BrandingComponent } from './branding/branding.component';
+import { ConditionalComponent } from './conditional/conditional.component';
+import {CatalgModule} from './catalog/catalogmodule'
+import { SecureModule } from './secure/securemodule';
+
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    ChangepasswordComponent
+    ChangepasswordComponent,
+    BrandingComponent,
+    ConditionalComponent
+    
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    CatalgModule,
+    SecureModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,22 @@
+<h1>
+  Conditional Statement
+</h1>
+
+<div *ngIf="true">
+  <div *ngIf="productionCost > billingPrice">Cheap Product <!DOCTYPE html></div>
+  <div *ngIf="productionCost > billingPrice; then thenBlock else elseBlock"></div>
+</div>
+    <ng-template #thenBlock>Product is cheap</ng-template>
+    <ng-template #elseBlock>Product is costly !</ng-template>
+
+<div *ngIf="flower == 'gerbera'">Gerbera</div>
+<div *ngIf="isFlowerAvailable()">Requested flower is available</div>
+
+<h1>ngSwitch</h1>
+<div [ngSwitch]="bestFlower">
+  <div *ngSwitchCase="'Gerbera'">Best flower: gerbera</div>
+  <div *ngSwitchCase="'rose'">Best flower: rose</div>
+  <div *ngSwitchCase="'lotus'">Best flower: lotus</div>
+  <div *ngSwitchDefault>Best flower is something else</div>
+
+</div>

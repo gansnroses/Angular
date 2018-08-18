@@ -1,0 +1,32 @@
+<form #form="ngForm" (ngSubmit)="submit(form.value)">
+  <fieldset ngModelGroup="name">
+    <div>
+      <label>Firstname:</label>
+      <input type="text" name="firstname" [ngModel]="person.firstname">
+    </div>
+    <div>
+      <label>Lastname:</label>
+      <input type="text" name="lastname" [ngModel]="person.lastname">
+    </div>
+  </fieldset>
+  
+  <fieldset ngModelGroup="address">
+    <div>
+      <label>Street:</label>
+      <input type="text" name="street" [ngModel]="person.address.street">
+    </div>
+    <div>
+      <label>Zip:</label>
+      <input type="text" name="zip" [ngModel]="person.address.zip">
+    </div>
+    <div>
+      <label>City:</label>
+      <input type="text" name="city" [ngModel]="person.address.city">
+    </div>
+  </fieldset>
+  <button type="submit">Submit</button>
+</form>
+
+<pre> {{form.value | json}} </pre>
+<h4>Submitted</h4>
+<pre> {{value | json }} </pre>
