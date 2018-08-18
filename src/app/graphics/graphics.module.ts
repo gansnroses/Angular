@@ -6,6 +6,7 @@ import { LineComponent } from "./line/line.component";
 import { EllipseComponent } from "./ellipse/ellipse.component";
 import { SmileyComponent } from "./smiley/smiley.component";
 import { GDIComponent } from './gdi/gdi.component';
+import {CustomModule} from '../custom/custommodule';
 
 @NgModule({
     declarations: [
@@ -23,7 +24,8 @@ import { GDIComponent } from './gdi/gdi.component';
         GDIComponent
     ],
     imports:[
-        BrowserModule
+        BrowserModule,
+        CustomModule
     ],
 
     providers:[ ],

@@ -7,6 +7,7 @@ import { BrandingComponent } from './branding/branding.component';
 import { ConditionalComponent } from './conditional/conditional.component';
 import {CatalgModule} from './catalog/catalogmodule'
 import { SecureModule } from './secure/securemodule';
+import { GraphicsModule } from './graphics/graphics.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SecureModule } from './secure/securemodule';
     BrowserModule,
     FormsModule,
     CatalgModule,
-    SecureModule
+    SecureModule,
+    GraphicsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
