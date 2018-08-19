@@ -18,7 +18,7 @@ export class LoginComponent implements OnInit {
 
    //Lifecycle event handler
   ngOnInit() { }
-
+  
   checkme(){
     this.status= this.theCredential.validate(this.username, this.password);
     console.log("userName" +this.username);
