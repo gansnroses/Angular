@@ -8,7 +8,8 @@ import { DeleteComponent } from './delete/delete.component';
 import { InsertComponent } from './insert/insert.component';
 import { UpdateComponent } from './update/update.component';
 import {SellingProductsComponent } from './selling-products/selling-products.component'
-import { CustomModule } from '../custom/custommodule'
+import { CustomModule } from '../custom/custommodule';
+import { ProductInsertComponent } from './product-insert/product-insert.component';
 
 
 
@@ -17,6 +18,7 @@ import { CustomModule } from '../custom/custommodule'
         ProductDetailComponent,
         ProductlistComponent,
         SellingProductsComponent,
+        ProductInsertComponent,
         CounterComponent,
         InsertComponent,
         UpdateComponent,
@@ -29,7 +31,8 @@ import { CustomModule } from '../custom/custommodule'
         InsertComponent,
         UpdateComponent,
         DeleteComponent,
-        SellingProductsComponent
+        SellingProductsComponent,
+        ProductInsertComponent
     ],
     imports:[
         BrowserModule,
