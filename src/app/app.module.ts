@@ -10,6 +10,7 @@ import { SecureModule } from './secure/securemodule';
 import { GraphicsModule } from './graphics/graphics.module';
 import { CRMModule } from './crm/crmmodule';
 import { SPAModule } from './routing/spa.module';
+import { GitHttpModule } from './HTTP/githttp.module';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { SPAModule } from './routing/spa.module';
     SecureModule,
     GraphicsModule,
     CRMModule,
-    SPAModule
+    SPAModule,
+    GitHttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
